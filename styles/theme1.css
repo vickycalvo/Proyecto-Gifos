@@ -1,0 +1,40 @@
+:root[data-theme="light"] {
+    --document-body-color: #FFF4FD;
+    --header-bg-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    --logo-bg-image: url(../assets/gifOF_logo.png);
+    --nav-a-hover: 1px solid #110038;
+    --nav-a-active: #DEDDDD;
+    --nav-buttons-color: #110038;
+    --nav-button-bg: #F7C9F3;
+    --nav-button-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    --nav-button-bg-hover: #E6BBE2;
+    --nav-dropdown-img-bg: #F7C9F3;
+    --nav-item-tema-bg: #F0F0F0;
+    --nav-item-tema-bg-hover: #FFF4FD;
+    --nav-item-tema-border-hover: 1px solid #CCA6C9;
+    --nav-item-tema-box-shado-hover: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    --gif-hover-border: 1px solid #110038;
+    --sectionBuscar-p-bg-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    --containerBuscador-bgcolor: #E6E6E6;
+    --containerBuscador-button-color: #B4B4B4;
+    --containerBuscador-button-bg: #E6E6E6;
+    --containerBuscador-buttonActive-bg: #F7C9F3;
+    --containerBuscador-buttonActive-color:#110038;
+    --containerBuscador-button-lupaActive: url(../assets/lupa.svg);
+    --containerBuscadorAutocomplete-bg: #E6E6E6;
+    --containerBuscadorAutocomplete-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    --containerBuscadorAutocomplete-item-bg: #F0F0F0;
+    --sugerencias-p-border: 1px solid #E6BBE2;
+    --sugerencias-id-gif-sugerido-bg-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    --sugerencias-ver-más-bg: #4180F6;
+    --sugerencias-ver-más-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+    /* //variables mis guifos */
+    --tituloBox-bg-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    --buttonComenzar-bg:#F7C9F3;
+    --buttonCaptura-bg: #F7C9F3;
+    --butonRepetirCaptura-color: #110038;
+    --buttonRepetirCaptura-bg: #FFF4FD;
+    --buttonSubirGuifo-bg: #F7C9F3;
+    --buttonListoFinal-bg: #F7C9F3
+
+}

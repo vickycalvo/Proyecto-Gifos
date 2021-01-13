@@ -1,0 +1,40 @@
+:root[data-theme="dark"] {
+    --document-body-color: #110038;
+    --header-bg-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    --logo-bg-image: url(../assets/gifOF_logo_dark.png);
+    --nav-a-hover: 1px solid #FFFFFF;
+    --nav-a-active: #FFFFFF;
+    --nav-buttons-color: #FFFFFF;
+    --nav-button-bg: #EE3EFE;
+    --nav-button-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    --nav-button-bg-hover: #CE36DB;
+    --nav-dropdown-img-bg: #EE3EFE;
+    --nav-item-tema-bg: #CCCCCC;
+    --nav-item-tema-bg-hover: #2E32FB;
+    --nav-item-tema-border-hover: 1px solid rgba(51, 53, 143, 0.20);
+    --nav-item-tema-box-shadow-hover: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+    --gif-hover-border: 1px solid #ffffff;
+    --sectionBuscar-p-bg-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    --containerBuscador-bgcolor: #B4B4B4;
+    --containerBuscador-button-color: #B4B4B4;
+    --containerBuscador-button-bg: #E6E6E6;
+    --containerBuscador-buttonActive-bg:  #EE3EFE;;
+    --containerBuscador-buttonActive-color: #FFFFFF;
+    --containerBuscador-button-lupaActive: url(../assets/lupa_light.svg);
+    --containerBuscadorAutocomplete-bg: #B4B4B4;
+    --containerBuscadorAutocomplete-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+    --containerBuscadorAutocomplete-item-bg: #CCCCCC;
+    --sugerencias-p-border: 1px solid #2E32FB;
+    --sugerencias-id-gif-sugerido-bg-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    --sugerencias-ver-más-bg: #2E32FB;
+    --sugerencias-ver-más-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+       /* //variables mis guifos */
+       --tituloBox-bg-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+       --buttonComenzar-bg:#EE3EFE;
+       --buttonCaptura-bg: #EE3EFE;
+       --butonRepetirCaptura-color: #FFFFFF;
+       --buttonRepetirCaptura-bg: #2E32FB ;
+       --buttonSubirGuifo-bg: #EE3EFE;
+       --buttonListoFinal-bg: #EE3EFE;
+
+}

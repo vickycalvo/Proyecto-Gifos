@@ -1,0 +1,405 @@
+/* --------------------General --------------------*/
+
+.título-box {
+    justify-content: space-between;
+    padding-right: 14px;
+    background-image: var(--tituloBox-bg-image);
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.título-box p {
+    padding-left: 8px;
+}
+
+#fechaYlogo {
+    display: flex;
+    align-items: center;
+}
+
+
+/* --------------------nav-------------------- */
+
+#aMisGuifos {
+    color: #A4A3A0;
+}
+
+#flechaLogo {
+    display: block;
+    margin-right: 20px;
+    margin-left: -40px;
+}
+
+#fechaYlogo a{
+    display: flex;
+}
+
+
+/* -----------------SECTION ETAPAS CREAR GUIFOS--------------- */
+
+#container-etapasCrearGuifo {
+    width: calc(100% - 300px);
+    margin: 100px auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none !important
+}
+
+
+
+/* ------------ box crear mis guifos ------------ */
+
+#box-crearGuifo {
+    width: 684px;
+    height: 386px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+
+#box-crearGuifo img {
+    float: left;
+    height: 32px;
+    width: 32px;
+    margin-top: 32px;
+    margin-left: 25px;
+}
+
+.container-texto-crearGuifos {
+    margin: 30px 0px 28px 73px;
+}
+
+.container-texto-crearGuifos h4 {
+    font-weight: 700;
+    font-size: 16px;
+    color: #110038;
+    line-height: 22px;
+    margin-bottom: 16px;
+}
+
+.container-texto-crearGuifos p {
+    color: #110038;
+    line-height: 28px;
+}
+
+.buttonCancelar,
+#buttonComenzar {
+    width: 144px;
+    height: 36px;
+    color: #110038;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    background: #FFF4FD;
+}
+
+#buttonComenzar {
+    margin: 0px 18px;
+    background: var(--buttonComenzar-bg);
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+/*-------------------- box etapas capturando guifo --------------------*/
+
+#box-etapasCapturarGuifo {
+    width: 860px;
+    height: 548px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.container-videoYboton {
+    margin: 5px 17px 16px 11px;
+}
+
+.container-videoEtapaCaptura {
+    width: 832px;
+    height: 434px;
+}
+
+/* agrego un background para resaltar el ancho del contenedor correspondiente al mock up pero  no se ocupa con la resolucón de la camara */
+#videoCaptura {
+    width: 100%;
+    height: 100%;
+    background: #A4A3A0; 
+}
+
+#videoFinished {
+    width: 100%;
+    height: 100%;
+}
+
+.container-buttonsEtapa {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-top: 24px;
+}
+
+
+/* -------------------- style box chequeo antes de empezar-------------------- */
+
+#buttonCapturar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 180px;
+    height: 36px;
+    color: #110038;
+    background: var(--buttonCaptura-bg);
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#buttonCapturar span{
+    color: #282828
+}
+
+.simboloCamara {
+    width: 36px;
+    margin-right: 38px;
+    box-shadow: 1px 0 0 0 black;
+}
+
+.simboloCamara img {
+    padding-top: 8px;
+    padding-bottom: 5px;
+}
+
+
+/* -------------------- style box capturando tu guifo --------------------*/
+
+#boxTimer{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: absolute;
+    left: 0px;
+    width: 124px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+#timer{
+color: #000000; 
+}
+
+
+.buttonListo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 180px;
+    height: 36px;
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.buttonListo p {
+    font-size: 16px;
+    color: #FFFFFF;
+    padding-top: 10px;
+}
+
+.buttonListo div {
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+.simboloListo {
+    width: 36px;
+    margin-right: 50px;
+    box-shadow: 1px 0 0 0 black;
+}
+
+.buttonListo span{
+    color: #FFFFFF
+}
+
+.simboloListo img {
+    padding-top: 7px;
+    padding-bottom: 4px;
+}
+
+
+/* -------------------- style box vista previa-------------------- */
+
+.buttonSubirGuifo {
+    width: 144px;
+    height: 36px;
+    color: #110038;
+    background: var(--buttonSubirGuifo-bg);
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.buttonRepetirCaptura {
+    width: 144px;
+    height: 36px;
+    color: var(--butonRepetirCaptura-color);
+    background: var(--buttonRepetirCaptura-bg);
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+    margin-right: 16px;
+
+}
+
+.buttonRepetirCaptura:hover {
+    background: #F0E5EE;
+}
+
+
+
+/* -------------------- style box subiendo guifo --------------------*/
+
+#progressSubiendo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+#progressSubiendo img{
+    margin-bottom: 10px;
+    width: 48px;
+    height: 48px;
+}
+
+#progressSubiendo h4{
+    color: #110038;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#progressBar {
+    width: 324px;
+    height: 24px;
+    margin-bottom: 10px;
+    background: url(../assets/progressBar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#textProgressBar{
+    font-size: 12px;
+    color: rgba(17,0,56,0.64);
+    text-align: center;
+}
+
+
+
+/* -------------------- style box exito-------------------- */
+
+
+#box-subidoExito {
+    width: 721px;
+    height: 391px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.container-guifoSubido {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 60px);
+    margin: 26px auto 64px;
+}
+
+.guifoSubido {
+    width: 365px;
+    height: 191px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    opacity: 80%;
+}
+
+.container-textoExito {
+    margin-left: 30px;
+    width: 260px;
+}
+
+.container-textoExito h4 {
+    margin-top: 20px;
+}
+
+.container-textoExito button {
+    width: 256px;
+    height: 36px;
+    color: #110038;
+    background: #FFF4FD;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.buttonCopiarEnlaceGuifo {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#buttonListoFinal {
+    width: 144px;
+    height: 36px;
+    margin-left: 531px;
+    color: #110038;
+    color: #282828;
+    background: var(--buttonListoFinal-bg);
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+
+/* -----------------SECTION MIS GUIFOS--------------- */
+
+.sectionTitle {
+    margin-top: 35px;
+}
+
+#container-misGuifos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    margin-left:-8px;
+    margin-right: -8px;
+}
+
+.gif-item-fromAPI {
+    margin: 8px 8px;
+    position: relative;
+    width: 287px;
+    height: 296px;
+}
+
+.gif-item-fromAPI-long {
+    margin: 8px 8px;
+    position: relative;
+    width: 590px;
+    height: 296px;
+}
+
+.gif-item-fromAPI img {
+    width: 100%;
+    height: 100%;
+}
+
+.gif-item-fromAPI-long img {
+    width: 100%;
+    height: 100%;
+}

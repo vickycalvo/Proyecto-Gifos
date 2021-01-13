@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Victoria Calvo">
+    <meta name="description" content="Proyecto Gifos Acamica">
+
+    <title>Proyecto Gifos</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/logoWeb.ico">
+
+    <link rel="stylesheet" href="./styles/theme1.css">
+    <link rel="stylesheet" href="./styles/theme2.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/inicio.css">
+
+
+</head>
+
+<body>
+
+    <header id="header"> 
+        <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="logo"> </div>
+            <!-- buttons nav bar -->
+            <div class="agruparBotonesNav">
+                <a id="linkCrearGuifos" href="./misGuifos.html"> </a> <button id="buttonCrear">Crear Guifos</button> 
+                <button id="buttonTema"><span>Elegir Tema</span><span id="dropdown"><img src="./assets/dropdown.svg" alt="dropdown"></span> 
+                    <!-- buttons elegir tema -->
+                    <span class="container-elegirTema">
+                        <span class="tema" id="temaDay">
+                            <u>S</u>ailor Day
+                        </span>
+                        <span class="tema" id="temaNight">
+                            Sailor Night
+                        </span>
+                    </span>
+                </button>
+                <!-- link a pagina mis guifos -->
+                <a id="aMisGuifos" href="./misGuifos.html"> <u>M</u>is Guifos </a>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- section para realizar busquedas -->
+    <section id="sectionBuscar">
+        <div class="container">
+            <h2 class="pBuscar">Buscar</h2>
+            <div class="container-buscador">
+                <input id="search" type="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                <button id="buttonBuscar" class="buttonDisabled">
+                     <span id="lupaBuscar" class="lupaDisabled"> </span> 
+                    <span id="spanBuscar" class="spanBuscarDisabled ">Buscar</span>  </button> 
+            </div>
+            <div id="container-listaSugerenciasBusqueda" class="NoneDispalyBoxSugerencias"></div>
+            <div id="container-busquedasGuardadas">  </div>
+        </div>
+    </section>
+
+<!-- section para mostrar gifs sugeridos -->
+    <section id="sectionSugerencias"> <div id="sectionSugerenciasDiv">
+        <div class="container">
+            <h4 class="sectionTitle">Hoy te sugerimos:</h4>
+            <ul class="lista-gifs-sugeridos">
+            </ul>
+        </div>
+    </div> </section>
+
+<!-- section para mostrar gifs en tendecia y resultados de busqueda -->
+    <section id="sectionTendencias">
+        <div class="container">
+            <h4 id="sectionTitle-gifsFromApi" class="sectionTitle">Tendencias:</h4>
+            <div class="container-gifsFromAPI"></div>
+            <div id="containerArrow"> <a href="#header"></a> <img id="arrowToTop" src="./assets/arrow.svg" alt=""> </div>
+        </div>
+    </section>
+
+
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/inicio.js"></script>
+
+</body>
+
+</html>

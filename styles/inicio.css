@@ -1,0 +1,315 @@
+/* ----------------------Section Buscar-------------------- */
+
+#sectionBuscar .container {
+    margin-bottom: 60px;
+    margin-top: 19px;
+    position: relative;
+}
+
+.pBuscar {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    padding-left: 8px;
+    background-image: var(--sectionBuscar-p-bg-image);
+    box-shadow: inset 2px 2px 0 0 #FFFFFF, inset -2px 0px 0 0 #B4B4B4;
+}
+
+.container-buscador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 75px;
+    background-color: var(--containerBuscador-bgcolor);
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.container-buscador input {
+    position: relative;
+    font-size: 16px;
+    color: #282828;
+    line-height: 22px;
+    width: 1250px;
+    height: 48px;
+    padding: 13px 8px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+#buttonBuscar {
+    display: flex;
+    align-items: center;
+    width: 102px;
+    height: 36px;
+    margin-left: 8px;
+}
+
+.buttonDisabled {
+    background: var(--containerBuscador-button-bg);
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.spanBuscarDisabled {
+    color: var(--containerBuscador-button-color);
+}
+
+.lupaDisabled {
+    background-image: url(../assets/lupa_inactive.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 26px;
+    width: 26px;
+}
+
+.buttonBuscarActive {
+    background: #EE3EFE;
+    color: #110038;
+    background: var(--containerBuscador-buttonActive-bg);
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.spanBuscarActive {
+    color: var(--containerBuscador-buttonActive-color);
+}
+
+.lupaActive {
+    background-image: var(--containerBuscador-button-lupaActive);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 26px;
+    width: 26px;
+}
+
+
+/* box desplegable sugerencia para busqueda*/
+
+.NoneDispalyBoxSugerencias {
+    display: none !important
+}
+
+#container-listaSugerenciasBusqueda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    z-index: 5;
+    width: 100%;
+    height: 160px;
+    background: var(--containerBuscadorAutocomplete-bg);
+    box-shadow: var(--containerBuscadorAutocomplete-box-shadow);
+}
+
+.itemSugerenciaBusqueda {
+    position: relative;
+    align-items: center;
+    height: 34px;
+    width: 88%;
+    margin: 8px 0px 8px 16px;
+    background: var(--containerBuscadorAutocomplete-item-bg);
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.itemSugerenciaBusqueda:hover {
+    background: #B6B3B3;
+}
+
+.itemSugerenciaBusqueda p {
+    padding-left: 16px;
+    padding-top: 7px;
+    font-size: 16px;
+    color: #110038;
+    line-height: 22px;
+}
+
+
+/* busquedas guardadas */
+
+#container-busquedasGuardadas {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.itemBusquedaGuardada {
+    height: 34px;
+    width: fit-content;
+    padding: 10px;
+    background: #4180F6;
+    padding-top: 8px;
+    margin-right: 10px;
+    text-align: center;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.itemBusquedaGuardada p {
+    color: #E6E6E6;
+}
+
+
+/* -------------------- Section Gifs Sugeridos--------------------  */
+
+#sectionSugerencias .container {
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.lista-gifs-sugeridos {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.container-itemSugerido {
+    margin-right: 24px;
+}
+
+.lista-gifs-sugeridos div:last-child {
+    margin-right: 0px;
+}
+
+.item-gifSugerido {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    box-shadow: 2px 2px 0 0 #B4B4B4, -2px 0px 0 0 #FFFFFF;
+}
+
+.item-gifSugerido img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.item-gifSugerido:hover {
+    border: var(--gif-hover-border);
+}
+
+.id-gif-sugerido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px;
+    height: 24px;
+    max-width: 280px;
+    background-image: var(--sugerencias-id-gif-sugerido-bg-image);
+    box-shadow: -2px -2px 0 0 #FFFFFF, 2px 0px 0 0 #B4B4B4;
+}
+
+.gif-idTitle-fromAPI {
+    font-size: 14px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ver-más {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 81px;
+    height: 34px;
+    margin-top: -50px;
+    margin-left: 7px;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: 1px solid #4C2F99;
+    background: var(--sugerencias-ver-más-bg);
+    box-shadow: var(--sugerencias-ver-más-box-shadow);
+}
+
+
+/* -------------------- Section Tendencias y Busquedas--------------------  */
+
+#sectionTendencias .sectionTitle {
+    margin-top: 45px;
+}
+
+.container-gifsFromAPI {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.gif-item-fromAPI {
+    position: relative;
+    margin: 8px 8px;
+    width: 286px;
+    height: 296px;
+}
+
+.gif-item-fromAPI-long {
+    position: relative;
+    margin: 8px 8px;
+    width: 590px;
+    height: 296px;
+}
+
+.gif-item-fromAPI img {
+    width: 100%;
+    height: 100%;
+}
+
+.gif-item-fromAPI-long img {
+    width: 100%;
+    height: 100%;
+}
+
+.gif-item-fromAPI:hover,
+.gif-item-fromAPI-long:hover {
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+    border: var(--gif-hover-border);
+}
+
+.id-gif-sugerido_bottom {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 272px;
+    padding: 5px 5px;
+    height: 24px;
+    width: 100%;
+    background-image: var(--sugerencias-id-gif-sugerido-bg-image);
+}
+
+
+/* flecha al final del contenedor para volver al principio de la pagina */
+
+#containerArrow {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#arrowToTop {
+    transform: rotate(90deg);
+    margin-right: -35px;
+    margin-top: -35px;
+}
+
+#containerArrow a {
+    position: relative;
+    z-index: 30;
+    margin-right: -35px;
+    margin-top: -35px;
+    padding: 10px;
+    width: 35px;
+    height: 24px;
+}
